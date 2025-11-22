@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Euphoria/Euphoria.vcxproj" Id="bbdf7575-d57c-4739-b3f4-eeaa8a6b1587" />
+</Solution>

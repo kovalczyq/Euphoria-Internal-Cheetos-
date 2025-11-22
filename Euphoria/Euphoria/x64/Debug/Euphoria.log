@@ -1,0 +1,70 @@
+﻿  imgui_impl_win32.cpp
+  main.cpp
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,21): error C2665: „std::basic_string_view<char,std::char_traits<char>>::compare”: żadna przeciążona funkcja nie może przekonwertować wszystkich typów argumentów
+  (kompilowanie pliku źródłowego „src/main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\__msvc_string_view.hpp(1681,30):
+      może to być „int std::basic_string_view<char,std::char_traits<char>>::compare(const std::basic_string_view<char,std::char_traits<char>>) noexcept const”
+          C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,21):
+          „int std::basic_string_view<char,std::char_traits<char>>::compare(const std::basic_string_view<char,std::char_traits<char>>) noexcept const”: nie można dokonać konwersji argumentu 1 z „WCHAR [260]” do „const std::basic_string_view<char,std::char_traits<char>>”
+              C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,31):
+              „std::basic_string_view<char,std::char_traits<char>>::basic_string_view”: żadna przeciążona funkcja nie może przekonwertować wszystkich typów argumentów
+                  C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\__msvc_string_view.hpp(1493,20):
+                  może to być „std::basic_string_view<char,std::char_traits<char>>::basic_string_view(const char *const ) noexcept”
+                      C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,31):
+                      „std::basic_string_view<char,std::char_traits<char>>::basic_string_view(const char *const ) noexcept”: nie można dokonać konwersji argumentu 1 z „WCHAR [260]” do „const char *const ”
+                          C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,31):
+                          Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
+                  C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\__msvc_string_view.hpp(1511,5):
+                  lub       "std::basic_string_view<char,std::char_traits<char>>::basic_string_view(_Iter,_Sent) noexcept(<expr>)"
+                  C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,31):
+                  podczas próby dopasowania listy argumentów "(WCHAR [260])"
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\__msvc_string_view.hpp(1696,30):
+      lub       "int std::basic_string_view<char,std::char_traits<char>>::compare(const _Elem *const ) noexcept const"
+          with
+          [
+              _Elem=char
+          ]
+          C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,21):
+          „int std::basic_string_view<char,std::char_traits<char>>::compare(const _Elem *const ) noexcept const”: nie można dokonać konwersji argumentu 1 z „WCHAR [260]” do „const _Elem *const ”
+          with
+          [
+              _Elem=char
+          ]
+              C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,31):
+              Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
+      C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(43,21):
+      podczas próby dopasowania listy argumentów "(WCHAR [260])"
+  
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(84,28): warning C4244: "=": konwersja z "uintptr_t" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „src/main.cpp”)
+  
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(106,27): warning C4244: "=": konwersja z "uintptr_t" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „src/main.cpp”)
+  
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(170,3): error C2664: „int GetWindowTextW(HWND,LPWSTR,int)”: nie można dokonać konwersji argumentu 2 z „char [256]” do „LPWSTR”
+  (kompilowanie pliku źródłowego „src/main.cpp”)
+      C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(170,26):
+      Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(9009,1):
+      zobacz deklarację „GetWindowTextW”
+      C:\Users\koval\source\repos\Euphoria\Euphoria\src\mem\memify.h(170,3):
+      podczas próby dopasowania listy argumentów "(HWND, char [256], size_t)"
+  
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\main.cpp(15,2): error C2143: błąd składniowy: brakuje „;” przed „while”
+  window.cpp
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(83,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(42,17): warning C4101: "modeDesc": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(121,54): warning C4244: "=": konwersja z "float" do "UINT", możliwa utrata danych
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(225,21): error C2440: "=": nie można konwertować z "const char [14]" na "LPCWSTR"
+      C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(225,21):
+      Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
+  
+C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(233,12): error C2664: „HWND CreateWindowExW(DWORD,LPCWSTR,LPCWSTR,DWORD,int,int,int,int,HWND,HMENU,HINSTANCE,LPVOID)”: nie można dokonać konwersji argumentu 3 z „const char *” do „LPCWSTR”
+      C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(236,3):
+      Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(4443,1):
+      zobacz deklarację „CreateWindowExW”
+      C:\Users\koval\source\repos\Euphoria\Euphoria\src\window\window.cpp(233,12):
+      podczas próby dopasowania listy argumentów "(long, LPCWSTR, const char *, unsigned long, int, int, int, int, int, int, HINSTANCE, int)"
+  
+  Generowanie kodu...
